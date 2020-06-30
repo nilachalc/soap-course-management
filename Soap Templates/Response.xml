@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FetchCourseDetailsResponse xmlns="http://soapcoursemanagement.com/coursedetails"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://soapcoursemanagement.com/coursedetails Course_Details.xsd">
+	<CourseDetails>
+		<id>1003</id>
+		<name>Course1</name>
+		<description>This is Course1</description>
+	</CourseDetails>
+</FetchCourseDetailsResponse>

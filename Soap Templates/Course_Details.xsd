@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sp:schema xmlns:sp="http://www.w3.org/2001/XMLSchema" 
+	targetNamespace="http://soapcoursemanagement.com/coursedetails" 
+	xmlns:tns="http://soapcoursemanagement.com/coursedetails" 
+	elementFormDefault="qualified">
+		<sp:complexType name="CourseDetails">
+			<sp:sequence>
+				<sp:element name="id" type="sp:integer" />
+				<sp:element name="name" type="sp:string" />
+				<sp:element name="description" type="sp:string" />
+			</sp:sequence>
+		</sp:complexType>
+		<sp:element name="FetchCourseDetailsRequest">
+			<sp:complexType>
+				<sp:sequence>
+					<sp:element name="id" type="sp:integer" />
+				</sp:sequence>
+			</sp:complexType>
+		</sp:element>
+		<sp:element name="FetchCourseDetailsResponse">
+			<sp:complexType>
+				<sp:sequence>
+					<sp:element name="CourseDetails" type="tns:CourseDetails" />
+				</sp:sequence>
+			</sp:complexType>
+		</sp:element>
+</sp:schema>
